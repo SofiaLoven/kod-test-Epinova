@@ -1,9 +1,9 @@
-$breakpoint-desktop: 400px;
+@import "partials/variables";
 
 body{
-    background-color: #E9EBEF;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
+    background-color: $backgorund-color;
+    font-family: $font-family;
+    color: $main-text-color;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
@@ -12,15 +12,29 @@ body{
     max-width: 1140px;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 64px;
+    gap: 64px;
+    h1{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 27px;
+        color: $heading-color;
+    }
+}
+
 .wrapper{
     display: flex;
     gap: 48px;
 }
 
 .card{
-    background-color: #FFFFFF;
-    border-bottom: 4px solid #C4DBDB;
-    border-radius: 24px;
+    background-color: $backgorund-color-card;
+    border-bottom: 4px solid $color-elements-card;
+    border-radius: 0 24px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -45,7 +59,7 @@ body{
             padding: 0;
             gap: 8px;
             align-self: stretch;
-            h1{
+            h2{
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 28px;
@@ -67,13 +81,13 @@ body{
             align-self: stretch;
             padding: 12px 8px;
             gap: 8px;
-            background-color: #C4DBDB;
+            background-color: $color-elements-card;
             border-radius: 8px;
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
             text-decoration: none;
-            color: #000000;
+            color:$main-text-color;
         }
     }
 }

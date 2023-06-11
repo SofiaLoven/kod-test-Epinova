@@ -1,5 +1,5 @@
 body {
-  background-color: #E9EBEF;
+  background-color: #F5F5F5;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
   min-height: 100vh;
@@ -10,6 +10,20 @@ body {
   max-width: 1140px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 64px;
+  gap: 64px;
+}
+section h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 27px;
+  color: #146E6E;
+}
+
 .wrapper {
   display: flex;
   gap: 48px;
@@ -18,7 +32,7 @@ body {
 .card {
   background-color: #FFFFFF;
   border-bottom: 4px solid #C4DBDB;
-  border-radius: 24px;
+  border-radius: 0 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -47,7 +61,7 @@ body {
   gap: 8px;
   align-self: stretch;
 }
-.card .content .text h1 {
+.card .content .text h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
